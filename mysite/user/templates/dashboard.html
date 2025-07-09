@@ -1,0 +1,10 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+<div class="container mt-5 text-center">
+    <h1>Welcome, {{ request.user.username }}!</h1>
+    <p>You are logged in successfully.</p>
+    
+    <a href="{% url 'logout' %}" class="btn btn-light btn-sm w-auto mt-3" style="background-color: #166fe5;; color: white;">Logout</a>
+</div>
+{% endblock %}
